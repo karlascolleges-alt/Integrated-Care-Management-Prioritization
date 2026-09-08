@@ -1,0 +1,10 @@
+{
+  "analysis_start_date": "2025-07-01",
+  "analysis_end_date": "2026-06-30",
+  "high_ed_visit_threshold": 3,
+  "high_inpatient_threshold": 2,
+  "medium_ed_visit_threshold": 1,
+  "medium_inpatient_threshold": 1,
+  "medium_chronic_threshold": 2
+}
+
