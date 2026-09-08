@@ -14,7 +14,7 @@ I wanted to explore how SQL could organize that information into a consistent an
 
 ```mermaid
 flowchart TD
-    A[Patient records] --> D[Patient-level features]
+    A[Patient records] --> D[Patient level features]
     B[Encounter records] --> D
     C[Diagnosis records] --> D
     E[Configurable thresholds] --> F[Priority assignment]
