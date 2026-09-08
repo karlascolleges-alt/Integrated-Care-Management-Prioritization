@@ -12,7 +12,7 @@ DEFAULT_DATA = ROOT / "sample_output" / "patient_priority_queue.csv"
 
 st.set_page_config(page_title="Care Management Review Queue", layout="wide")
 st.title("Care Management Review Queue")
-st.caption("Synthetic demonstration data only. Priorities support human review and are not clinical recommendations.")
+st.caption("Synthetic demonstration data only.")
 
 uploaded = st.sidebar.file_uploader("Use another generated queue", type="csv")
 df = pd.read_csv(uploaded if uploaded is not None else DEFAULT_DATA)
@@ -23,7 +23,7 @@ col1, col2, col3, col4 = st.columns(4)
 col1.metric("Patients", len(df))
 col2.metric("High priority", int((df["priority_level"] == "High").sum()))
 col3.metric("Medium priority", int((df["priority_level"] == "Medium").sum()))
-col4.metric("Total 365-day cost", f"${df['total_cost_365d'].sum():,.0f}")
+col4.metric("Total 365 day cost", f"${df['total_cost_365d'].sum():,.0f}")
 
 chart_col, reason_col = st.columns(2)
 priority_order = ["High", "Medium", "Low"]
@@ -34,7 +34,7 @@ reason_col.plotly_chart(px.bar(reason_counts, x="patients", y="priority_reason",
 
 st.subheader("Filterable patient queue")
 st.dataframe(filtered, width="stretch", hide_index=True)
-st.subheader("Patient-level explanation")
+st.subheader("Patient level explanation")
 if not filtered.empty:
     patient_id = st.selectbox("Patient ID", filtered["patient_id"].tolist())
     row = filtered.loc[filtered["patient_id"] == patient_id].iloc[0]
