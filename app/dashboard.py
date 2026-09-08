@@ -1,4 +1,4 @@
-"""Interactive view of the care-management priority queue."""
+"""Interactive view of the care management priority queue."""
 
 from pathlib import Path
 
