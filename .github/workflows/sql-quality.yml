@@ -26,3 +26,9 @@ jobs:
 
       - name: Run expected-output tests
         run: python -m unittest discover -s tests -v
+
+              - name: Exercise local pipeline
+        run: |
+          python -m pipeline.generate_data --patients 100 --output data/raw
+          python -m pipeline.run_pipeline --input data/raw --output data/processed/patient_priority_queue.csv
+          test "$(($(wc -l < data/processed/patient_priority_queue.csv) - 1))" -eq 100
