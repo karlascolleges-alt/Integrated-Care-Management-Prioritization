@@ -1,0 +1,16 @@
+patient_id,total_encounters_365d,ed_visits_365d,inpatient_admissions_365d,chronic_condition_count,total_cost_365d,last_encounter_date,priority_level,priority_reason
+1,4,3,0,2,4920.00,2026-05-02,High,3+ emergency-department visits
+2,3,0,2,2,28860.00,2026-04-01,High,2+ inpatient admissions
+3,2,1,0,1,1390.00,2026-03-08,Medium,1+ emergency-department visit
+4,2,0,0,2,600.00,2026-04-19,Medium,2+ chronic conditions
+5,1,0,0,1,175.00,2026-02-10,Low,No review threshold met
+6,3,1,2,3,35100.00,2026-03-17,High,2+ inpatient admissions
+7,2,1,0,1,1300.00,2026-06-02,Medium,1+ emergency-department visit
+8,2,0,0,1,375.00,2026-03-11,Low,No review threshold met
+9,4,4,0,2,6650.00,2026-05-29,High,3+ emergency-department visits
+10,2,0,0,3,615.00,2026-04-08,Medium,2+ chronic conditions
+11,1,0,0,0,350.00,2026-02-14,Low,No review threshold met
+12,2,1,0,1,1445.00,2026-03-25,Medium,1+ emergency-department visit
+13,3,3,0,1,4600.00,2026-06-11,High,3+ emergency-department visits
+14,1,0,0,0,180.00,2026-01-26,Low,No review threshold met
+15,2,0,1,1,12310.00,2026-05-20,Medium,1+ inpatient admission
