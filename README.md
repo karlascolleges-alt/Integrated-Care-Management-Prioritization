@@ -1,5 +1,9 @@
 # Patient Utilization and Care Management Analytics
 
+## Live Dashboard
+
+[Launch the Integrated Care Management Dashboard](https://integrated-care-management-prioritization.streamlit.app)
+
 I built this project to explore how hospital encounter and diagnosis data can help a care management team decide which patient records to review first. The original workflow runs in Snowflake SQL. A local Python pipeline now provides a repeatable way to generate larger synthetic datasets, validate records, reproduce the priority logic, and explore the results in an interactive dashboard.
 
 The pipeline analyzes synthetic patient data and creates an explainable High, Medium, or Low review priority queue. Each result includes the utilization and diagnosis counts behind the assigned priority.
